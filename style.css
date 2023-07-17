@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oleo+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,600&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+ font-family: 'Work Sans', sans-serif; 
+}
+
+/* custom variable is here  */
+:root {
+    --header : rgba(255, 144, 14, 0.10);
+    --darken :  #131313;
+    --darken-02 : #727272;
+    --button : #FF900E;
+}
+
+header {
+    background-color: var(--header);
+    padding: 0px 230px 45px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.nav-container ul a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* banner section starts here  */
+
+.banner-content {
+    width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 50px;
+    color: var(--darken);
+    margin: 20px 0 0;
+}
+.banner-description {
+    font-size: 16px;
+    color: var(--darken-02);
+    margin: 32px 0px;
+}
+.banner-btn {
+    background-color: var(--button);
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.banner-container .banner-image {
+    max-width: 1000px;
+    margin: 0 auto;
+}
